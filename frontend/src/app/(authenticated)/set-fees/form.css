@@ -1,0 +1,108 @@
+/* Container for the entire registration fees section */
+.register-fees-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align to the top */
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%; /* Full width for flexibility */
+    max-width: 1200px; /* Limit max width */
+    padding-top: 95px;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Heading styles */
+.register-fees-container h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #17cbb9;
+    padding: 35px 35px 10px; /* Adjust padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* Form styles */
+.register-fees-form {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Limit max width */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between elements */
+    margin-top: -25px;
+}
+
+/* Styles for select and input fields */
+.register-fees-form select,
+.register-fees-form input[type="number"] {
+    width: 100%; /* Full width */
+    padding: 0.75rem;
+    border: 1px solid #9c9c9c; /* Border color */
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+}
+
+/* Focus states for inputs */
+.register-fees-form select:focus,
+.register-fees-form input[type="number"]:focus {
+    outline: none;
+    background-color: #d8e6cd;
+    border: 2px solid rgb(122, 205, 122);
+}
+
+/* Dark mode styles */
+.dark .register-fees-form select,
+.dark .register-fees-form input[type="number"] {
+    border: 1px solid #494646; /* Border color */
+    background-color: #27272a;
+}
+
+.dark .register-fees-form select:focus,
+.dark .register-fees-form input[type="number"]:focus {
+    background-color: #333631;
+    border: 2px solid rgb(58, 98, 58);
+}
+
+/* Button styles */
+.register-fees-form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #17cbb9; /* Button color */
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.register-fees-form button:hover {
+    background-color: #15a8a1; /* Darker shade on hover */
+}
+
+/* Message styles */
+.register-fees-message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f01a1a; /* Error message color */
+}
+
+/* Required field dot */
+.required-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-bottom: 3px;
+}

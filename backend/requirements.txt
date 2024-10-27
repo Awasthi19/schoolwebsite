@@ -1,0 +1,7 @@
+Django
+djangorestframework
+django-cors-headers
+jwt
+fuzzywuzzy[speedup]
+django-crontab
+Pillow
